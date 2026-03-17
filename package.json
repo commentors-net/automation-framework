@@ -1,0 +1,25 @@
+{
+  "name": "automation-framework",
+  "version": "1.0.0",
+  "description": "Playwright modular enterprise test platform",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:customer-api": "playwright test --project=customer-api",
+    "test:core-api": "playwright test --project=core-api",
+    "test:customer-ui": "playwright test --project=customer-ui",
+    "test:admin-ui": "playwright test --project=admin-ui",
+    "test:integration": "playwright test --project=integration",
+    "test:smoke": "playwright test --grep @smoke",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.0",
+    "@types/node": "^20.11.5",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  }
+}
